@@ -87,7 +87,120 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+        style="
+          background-color: transparent;
+          border: 2px solid #8b5cf6;
+          color: #8b5cf6;
+        "
+      >
+        <div class="modal-dialog">
+          <div
+            class="modal-content"
+            style="
+              background-color: #12182b;
+              border: 2px solid #8b5cf6;
+              color: #8b5cf6;
+            "
+          >
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="loginModalLabel">
+                Iniciar Sesión
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputEmail1"
+                    class="form-label"
+                    style="color: #a78bfa"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    minlength="10"
+                    maxlength="50"
+                    required
+                  />
+                  <div id="emailHelp" class="" style="color: #9ca3af">
+                    <p>
+                      Nunca compartiremos tu correo electrónico con nadie más.
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label
+                    for="exampleInputPassword1"
+                    class="form-label"
+                    style="color: #a78bfa"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    minlength="6"
+                    maxlength="30"
+                    required
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="exampleCheck1"
+                    style="color: #a78bfa"
+                    >¿Quieres recibir notificaciones de nuestras futuras
+                    novedades?</label
+                  >
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                    required
+                  />
+                  <label
+                    class="form-check-label"
+                    for="exampleCheck1"
+                    style="color: #a78bfa"
+                    >¿Aceptas nuestros términos y condiciones?</label
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="btn"
+                  style="background-color: #8b5cf6"
+                >
+                  Iniciar Sesion
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
