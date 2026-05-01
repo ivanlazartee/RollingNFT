@@ -1,3 +1,31 @@
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: #8B5CF6;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: #8B5CF6;
+}
+
+.nav-item {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.nav-item:hover {
+  color: #8B5CF6;
+}
+
 .carousel-indicators [data-bs-target] {
   width: 12px;
   height: 12px;
