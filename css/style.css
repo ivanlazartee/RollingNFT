@@ -154,3 +154,33 @@
   font-weight: 500;
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;    
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .footerLeft {
+    max-width: 100%;
+  }
+
+  .footerFlex {
+    justify-content: center; 
+  }
+
+  .footerLinks {
+    align-items: center;
+  }
+
+  .footerRedes {
+    align-items: center;
+  }
+
+  .redesIconos {
+    justify-content: center;
+  }
+}
