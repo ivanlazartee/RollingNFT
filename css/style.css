@@ -39,7 +39,7 @@
   background-color: #8b5cf6;
 }
 
-.txtColect{
+.txtColect {
   color: #8b5cf6;
 }
 .iconEt {
@@ -113,12 +113,64 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
   max-width: 900px;
   margin: 0 auto;
   padding: 50px 20px;
-
   gap: 60px;
+}
+
+.containerBanner {
+  display: flex;
+  justify-content: center;
+}
+.banner {
+  height: 300px;
+  width: 80%;
+  border-radius: 20px;
+  background-image: url(../assets/img/bannerIMG.png);
+  background-size: cover;
+  padding: 20px;
+}
+
+.badge-custom {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #a855f7;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+.highlight {
+  color: #a855f7;
+}
+
+.subtitle {
+  color: #c4c4c4;
+  font-size: 1.1rem;
+}
+
+.btn-mint {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+  width: 280px;
+}
+
+.btn-mint:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+}
+
+@media (max-width: 768px) {
+  .containerBanner {
+    display: none;
+  }
 }
 
 .footerLeft {
