@@ -6,6 +6,7 @@
 
 .navbar-brand:hover {
   color: #8b5cf6;
+  color: #8B5CF6;
 }
 
 .nav-link {
@@ -15,6 +16,7 @@
 
 .nav-link:hover {
   color: #8b5cf6;
+  color: #8B5CF6;
 }
 
 .nav-item {
@@ -24,6 +26,7 @@
 
 .nav-item:hover {
   color: #8b5cf6;
+  color: #8B5CF6;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -31,6 +34,7 @@
   height: 12px;
   border-radius: 50%;
   background-color: #9ca3af;
+  background-color: #9CA3AF;
   border: none;
   opacity: 1;
 }
@@ -107,6 +111,8 @@
 
 .btn-gradient:hover {
   opacity: 0.8;
+  background-color: #8B5CF6;
+
 }
 
 .containerBanner {
@@ -173,6 +179,7 @@
   gap: 60px;
 }
 
+ footer
 .footerLeft {
   max-width: 300px;
 }
@@ -203,6 +210,7 @@
   font-size: 15px;
   font-weight: 500;
   color: #8b5cf6;
+  color: #8B5CF6;
   margin-bottom: 10px;
 }
 
@@ -218,6 +226,7 @@
 
 .linksNav {
   color: #9ca3af;
+  color: #9CA3AF;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -225,12 +234,14 @@
 
 .linksNav:hover {
   color: #8b5cf6;
+  color: #8B5CF6;
 }
 
 .footerSections {
   font-size: 15px;
   font-weight: 500;
   color: #8b5cf6;
+  color: #8B5CF6;
   margin-bottom: 10px;
 }
 
@@ -256,6 +267,7 @@
 
   background-color: #1f2937;
   color: #9ca3af;
+  color: #9CA3AF;
 
   text-decoration: none;
   font-size: 16px;
@@ -270,6 +282,11 @@
 
 .copyright {
   color: #9ca3af;
+  color: #8B5CF6;
+}
+
+.copyright {
+  color: #9CA3AF;
   display: flex;
   justify-content: center;
   font-size: 15px;
@@ -282,6 +299,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-direction: column; 
+    align-items: center;     
+    text-align: center;    
     gap: 30px;
     padding: 40px 20px;
   }
@@ -292,6 +312,7 @@
 
   .footerFlex {
     justify-content: center;
+    justify-content: center; 
   }
 
   .footerLinks {
@@ -304,5 +325,65 @@
 
   .redesIconos {
     justify-content: center;
+  }
+}
+.contacto {
+  background-color: #0d1117;
+}
+
+.form-box {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.form-control {
+  background-color: rgba(255,255,255,0.05);
+  border: none;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.form-control:focus {
+  background-color: rgba(255,255,255,0.08);
+  box-shadow: none;
+  color: white;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: white;
+  border: none;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contactoSection {
+  background-color: #0f1422;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 50px;
+}
+
+.contactoP {
+  font-size: 24px;
+  font-weight:600;
+  color: #7c3aed;
+}
+@media (max-width: 768px) {
+  .form-box {
+    padding: 20px;
   }
 }
