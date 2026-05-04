@@ -214,6 +214,10 @@
   margin-bottom: 10px;
 }
 
+.footerNav li{
+  list-style: none;
+}
+
 .footerLinks {
   list-style: none;
   padding: 0;
