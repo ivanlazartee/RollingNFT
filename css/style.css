@@ -5,7 +5,7 @@
 }
 
 .navbar-brand:hover {
-  color: #8B5CF6;
+  color: #8b5cf6;
 }
 
 .nav-link {
@@ -14,7 +14,7 @@
 }
 
 .nav-link:hover {
-  color: #8B5CF6;
+  color: #8b5cf6;
 }
 
 .nav-item {
@@ -23,20 +23,90 @@
 }
 
 .nav-item:hover {
-  color: #8B5CF6;
+  color: #8b5cf6;
 }
 
 .carousel-indicators [data-bs-target] {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #9CA3AF;
+  background-color: #9ca3af;
   border: none;
   opacity: 1;
 }
 
 .carousel-indicators .active {
-  background-color: #8B5CF6;
+  background-color: #8b5cf6;
+}
+
+.txtColect{
+  color: #8b5cf6;
+}
+.iconEt {
+  width: 24px;
+}
+.iconPrecio {
+  display: flex;
+}
+.iconPrecio p {
+  margin-top: 13px;
+  margin-left: 10px;
+}
+.txtCards {
+  margin-left: 15px;
+  margin-top: -28px;
+}
+.nft-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.nft-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.img-container {
+  padding: 30px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.badge-custom {
+  background: radial-gradient(circle at top, #691c9665, #261d74);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #c9a8ff;
+  box-shadow: 0 0 10px rgba(155, 92, 255, 0.3);
+}
+
+.eth {
+  color: #b892ff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #7b2ff7, #9b5cff);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  opacity: 0.8;
 }
 
 .footerContainer {
@@ -80,7 +150,7 @@
 .footerNav {
   font-size: 15px;
   font-weight: 500;
-  color: #8B5CF6;
+  color: #8b5cf6;
   margin-bottom: 10px;
 }
 
@@ -95,20 +165,20 @@
 }
 
 .linksNav {
-  color: #9CA3AF;
+  color: #9ca3af;
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
 }
 
 .linksNav:hover {
-  color: #8B5CF6;
+  color: #8b5cf6;
 }
 
 .footerSections {
   font-size: 15px;
   font-weight: 500;
-  color: #8B5CF6;
+  color: #8b5cf6;
   margin-bottom: 10px;
 }
 
@@ -133,7 +203,7 @@
   height: 35px;
 
   background-color: #1f2937;
-  color: #9CA3AF;
+  color: #9ca3af;
 
   text-decoration: none;
   font-size: 16px;
@@ -143,11 +213,11 @@
 }
 
 .redesIconos a:hover {
-  color: #8B5CF6;
+  color: #8b5cf6;
 }
 
 .copyright {
-  color: #9CA3AF;
+  color: #9ca3af;
   display: flex;
   justify-content: center;
   font-size: 15px;
@@ -157,9 +227,9 @@
 
 @media (max-width: 768px) {
   .footerContainer {
-    flex-direction: column; 
-    align-items: center;     
-    text-align: center;    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 30px;
     padding: 40px 20px;
   }
@@ -169,7 +239,7 @@
   }
 
   .footerFlex {
-    justify-content: center; 
+    justify-content: center;
   }
 
   .footerLinks {
