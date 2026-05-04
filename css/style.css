@@ -109,16 +109,6 @@
   opacity: 0.8;
 }
 
-.footerContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 50px 20px;
-  gap: 60px;
-}
-
 .containerBanner {
   display: flex;
   justify-content: center;
@@ -171,6 +161,16 @@
   .containerBanner {
     display: none;
   }
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  gap: 60px;
 }
 
 .footerLeft {
