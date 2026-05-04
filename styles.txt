@@ -1,0 +1,14 @@
+Fondos (modo oscuro)
+#0B0F1A → fondo principal
+#12182B → secciones/cards
+#1A2238 → hover / variantes
+🟣 Colores principales (marca)
+#8B5CF6 → violeta principal (botones)
+#7C3AED → violeta oscuro
+#A78BFA → violeta claro (detalles)
+✨ Acentos
+#22D3EE → cyan (detalles tech)
+#F59E0B → highlight (opcional)
+⚪ Texto
+#FFFFFF → texto principal
+#9CA3AF → texto secundario
