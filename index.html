@@ -224,138 +224,139 @@
         </div>
       </div>
     </section>
-    <div class="container d-flex justify-content-center">
-      <div class="foroHeader">
-        <div class="foroTitulo">
-          <i class="icconMensaje fa-solid fa-comments"></i> <span>FORO COMUNITARIO</span> - ÚLTIMOS COMENTARIOS
+    <section class="container d-flex justify-content-center my-5">
+      <div class="foroCard"> <!-- AQUÍ agregamos la clase que faltaba -->
+        <div class="foroHeader">
+          <div class="foroTitulo">
+            <i class="icconMensaje fa-solid fa-comments"></i> <span>FORO COMUNITARIO</span> - ÚLTIMOS COMENTARIOS
+          </div>
+          <div class="foroIconos">
+            <span><i class="iTwitter fa-brands fa-x-twitter"></i></span>
+            <span><i class="iInsta fa-brands fa-instagram"></i></span>
+            <span><i class="iDisc fa-brands fa-discord"></i></span>
+          </div>
         </div>
-        <div class="foroIconos">
-          <span><i class="iTwitter fa-brands fa-x-twitter"></i></span>
-          <span><i class="iInsta fa-brands fa-instagram"></i></span>
-          <span><i class="iDisc fa-brands fa-discord"></i></span>
+        <div class="foroComentariosWrapper">
+          <div class="foroComentarios">
+
+            <div class="foroItem">
+              <img src="./assets/img/dog.jpg" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@CryptoKat</span>: “¡Acabo de acuñar el #002! Qué relax.”
+              </div>
+              <div class="foroMeta">
+                <span>2 mins ago</span>
+                <span><i class="fa-solid fa-thumbs-up"></i> 12</span>
+              </div>
+            </div>
+
+            <div class="foroItem">
+              <img src="./assets/img/cat.jpg" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@RollingRex</span>: “¡Miren este arte! No puedo esperar al próximo lanzamiento.”
+              </div>
+              <div class="foroMeta">
+                <span>15 mins ago</span>
+                <span><i class="fa-solid fa-heart"></i> 8</span>
+              </div>
+            </div>
+
+            <div class="foroItem">
+              <img src="./assets/img/dinoCards.png" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@DevDan</span>: “Me encanta el tema de programador. El #001 es una obra maestra.”
+              </div>
+              <div class="foroMeta">
+                <span>1 hour ago</span>
+                <span><i class="fa-solid fa-heart"></i> 24</span>
+              </div>
+            </div>
+            <div class="foroItem">
+              <img src="./assets/img/dog.jpg" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@CodeHunter</span>: “El diseño del NFT #002 está muy limpio, se nota que hay buen laburo detrás
+                del código.”
+              </div>
+              <div class="foroMeta">
+                <span>2 hours ago</span>
+                <span><i class="fa-solid fa-thumbs-up"></i> 18</span>
+              </div>
+            </div>
+
+            <div class="foroItem">
+              <img src="./assets/img/cat.jpg" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@PixelDev</span>: “La colección tiene una identidad muy marcada, eso suma muchísimo como
+                producto digital.”
+              </div>
+              <div class="foroMeta">
+                <span>3 hours ago</span>
+                <span><i class="fa-solid fa-heart"></i> 14</span>
+              </div>
+            </div>
+
+            <div class="foroItem">
+              <img src="./assets/img/dinoCards.png" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@StackMaster</span>: “Se nota que hay lógica de programación bien pensada en cada detalle del
+                #001.”
+              </div>
+              <div class="foroMeta">
+                <span>4 hours ago</span>
+                <span><i class="fa-solid fa-heart"></i> 29</span>
+              </div>
+            </div>
+
+            <div class="foroItem">
+              <img src="./assets/img/dog.jpg" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@NFTBuilder</span>: “Este tipo de proyectos mezcla arte y desarrollo, eso los hace mucho más
+                interesantes.”
+              </div>
+              <div class="foroMeta">
+                <span>6 hours ago</span>
+                <span><i class="fa-solid fa-thumbs-up"></i> 21</span>
+              </div>
+            </div>
+
+            <div class="foroItem">
+              <img src="./assets/img/cat.jpg" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@UXCoder</span>: “Muy buen equilibrio entre lo visual y la experiencia de usuario, se siente
+                profesional.”
+              </div>
+              <div class="foroMeta">
+                <span>8 hours ago</span>
+                <span><i class="fa-solid fa-heart"></i> 17</span>
+              </div>
+            </div>
+
+            <div class="foroItem">
+              <img src="./assets/img/dinoCards.png" class="foroAvatar">
+              <div class="foroTexto">
+                De <span>@FullStackNFT</span>: “El concepto del programador está muy bien llevado, conecta perfecto con
+                devs.”
+              </div>
+              <div class="foroMeta">
+                <span>10 hours ago</span>
+                <span><i class="fa-solid fa-heart"></i> 33</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="foroForm">
+          <div class="foroMensajeRow">
+            <label>Comentar como:</label>
+            <input type="text" class="foroInputUsuario" placeholder="Tu nombre de usuario">
+          </div>
+          <div class="foroMensajeRow">
+            <span class="foroTag">@Hablemos</span>
+            <input type="text" class="foroInputMensaje" placeholder="Escribe un mensaje...">
+            <button class="foroBoton">PUBLICAR COMENTARIO</button>
+          </div>
         </div>
       </div>
-      <div class="foroComentariosWrapper">
-        <div class="foroComentarios">
-
-          <div class="foroItem">
-            <img src="./assets/img/dog.jpg" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@CryptoKat</span>: “¡Acabo de acuñar el #002! Qué relax.”
-            </div>
-            <div class="foroMeta">
-              <span>2 mins ago</span>
-              <span><i class="fa-solid fa-thumbs-up"></i> 12</span>
-            </div>
-          </div>
-
-          <div class="foroItem">
-            <img src="./assets/img/cat.jpg" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@RollingRex</span>: “¡Miren este arte! No puedo esperar al próximo lanzamiento.”
-            </div>
-            <div class="foroMeta">
-              <span>15 mins ago</span>
-              <span><i class="fa-solid fa-heart"></i> 8</span>
-            </div>
-          </div>
-
-          <div class="foroItem">
-            <img src="./assets/img/dinoCards.png" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@DevDan</span>: “Me encanta el tema de programador. El #001 es una obra maestra.”
-            </div>
-            <div class="foroMeta">
-              <span>1 hour ago</span>
-              <span><i class="fa-solid fa-heart"></i> 24</span>
-            </div>
-          </div>
-          <div class="foroItem">
-            <img src="./assets/img/dog.jpg" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@CodeHunter</span>: “El diseño del NFT #002 está muy limpio, se nota que hay buen laburo detrás
-              del código.”
-            </div>
-            <div class="foroMeta">
-              <span>2 hours ago</span>
-              <span><i class="fa-solid fa-thumbs-up"></i> 18</span>
-            </div>
-          </div>
-
-          <div class="foroItem">
-            <img src="./assets/img/cat.jpg" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@PixelDev</span>: “La colección tiene una identidad muy marcada, eso suma muchísimo como
-              producto digital.”
-            </div>
-            <div class="foroMeta">
-              <span>3 hours ago</span>
-              <span><i class="fa-solid fa-heart"></i> 14</span>
-            </div>
-          </div>
-
-          <div class="foroItem">
-            <img src="./assets/img/dinoCards.png" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@StackMaster</span>: “Se nota que hay lógica de programación bien pensada en cada detalle del
-              #001.”
-            </div>
-            <div class="foroMeta">
-              <span>4 hours ago</span>
-              <span><i class="fa-solid fa-heart"></i> 29</span>
-            </div>
-          </div>
-
-          <div class="foroItem">
-            <img src="./assets/img/dog.jpg" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@NFTBuilder</span>: “Este tipo de proyectos mezcla arte y desarrollo, eso los hace mucho más
-              interesantes.”
-            </div>
-            <div class="foroMeta">
-              <span>6 hours ago</span>
-              <span><i class="fa-solid fa-thumbs-up"></i> 21</span>
-            </div>
-          </div>
-
-          <div class="foroItem">
-            <img src="./assets/img/cat.jpg" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@UXCoder</span>: “Muy buen equilibrio entre lo visual y la experiencia de usuario, se siente
-              profesional.”
-            </div>
-            <div class="foroMeta">
-              <span>8 hours ago</span>
-              <span><i class="fa-solid fa-heart"></i> 17</span>
-            </div>
-          </div>
-
-          <div class="foroItem">
-            <img src="./assets/img/dinoCards.png" class="foroAvatar">
-            <div class="foroTexto">
-              De <span>@FullStackNFT</span>: “El concepto del programador está muy bien llevado, conecta perfecto con
-              devs.”
-            </div>
-            <div class="foroMeta">
-              <span>10 hours ago</span>
-              <span><i class="fa-solid fa-heart"></i> 33</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="foroForm">
-        <div class="foroMensajeRow">
-          <label>Comentar como:</label>
-          <input type="text" class="foroInputUsuario" placeholder="Tu nombre de usuario">
-        </div>
-        <div class="foroMensajeRow">
-          <span class="foroTag">@Hablemos</span>
-          <input type="text" class="foroInputMensaje" placeholder="Escribe un mensaje...">
-          <button class="foroBoton">PUBLICAR COMENTARIO</button>
-        </div>
-      </div>
-    </div>
-    </div>
+    </section>
     <div class="containerBanner my-5">
       <div class="banner d-flex align-items-center justify-content-center position-relative">
         <div class="text-center text-white">
