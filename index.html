@@ -103,42 +103,108 @@
         </div>
       </div>
     </div>
-    <div class="mx-5 mt-3 p-0" style="background-color: #12182b; border-radius: 12px; overflow: hidden">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+      <div class="carousel-wrapper mx-5 mt-4">
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner rounded-4">
+            <div class="carousel-item active">
+              <img
+                src="./assets/img/carousel1.png"
+                class="d-block w-100 carousel-img"
+                alt="carousel1"
+              />
+              <div class="carousel-caption-custom">
+                <h1>ÚNICOS. DIGITALES.</h1>
+                <h1 class="text-purple">IRREPETIBLES.</h1>
+                <p>
+                  Rolling NFT es una colección de 3,333 NFTs únicos inspirados
+                  en la cultura gamer y la vida digital.
+                </p>
+                <a href="./pages/error404.html">
+                  <button class="btn btn-purple">Explorar colección →</button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/carousel2.png"
+                class="d-block w-100 carousel-img"
+                alt="carousel2"
+              />
+              <div class="carousel-caption-custom">
+                <h1>ÚNICOS. DIGITALES.</h1>
+                <h1 class="text-purple">IRREPETIBLES.</h1>
+                <p>
+                  Rolling NFT es una colección de 3,333 NFTs únicos inspirados
+                  en la cultura gamer y la vida digital.
+                </p>
+                <a href="./pages/error404.html">
+                  <button class="btn btn-purple">Explorar colección →</button>
+                </a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/carousel3.png"
+                class="d-block w-100 carousel-img"
+                alt="carousel3"
+              />
+              <div class="carousel-caption-custom">
+                <h1>ÚNICOS. DIGITALES.</h1>
+                <h1 class="text-purple">IRREPETIBLES.</h1>
+                <p>
+                  Rolling NFT es una colección de 3,333 NFTs únicos inspirados
+                  en la cultura gamer y la vida digital.
+                </p>
+                <a href="./pages/error404.html">
+                  <button class="btn btn-purple">Explorar colección →</button>
+                </a>              
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/img/logo_carrouselNFT.png" class="d-block w-100" style="height: 400px; object-fit: cover"
-              alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/logo_carrouselNFT.png" class="d-block w-100" style="height: 400px; object-fit: cover"
-              alt="..." />
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/logo_carrouselNFT.png" class="d-block w-100" style="height: 400px; object-fit: cover"
-              alt="..." />
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div>
     <section class="container py-5 text-center">
       <p class="txtColect text-uppercase mb-1">Colección</p>
       <h2 class="fw-bold">Nuestros NFTs</h2>
@@ -147,7 +213,7 @@
         <div class="col-md-4">
           <div class="nft-card">
             <div class="img-container">
-              <img src="./assets/img/dog.jpg" alt="">
+              <img src="./assets/img/dog.jpg" alt="imgDog">
             </div>
             <div class="txtCards p-3 text-start">
               <div class="d-flex justify-content-between align-items-center mb-2">
@@ -166,14 +232,14 @@
                 </svg>
                 <p class="eth">0.09 ETH</p>
               </div>
-              <a href="#" class="btn btn-gradient w-100">Ver detalle</a>
+              <a href="./pages/error404.html" class="btn btn-gradient w-100">Ver detalle</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="nft-card">
             <div class="img-container">
-              <img src="./assets/img/cat.jpg" alt="">
+              <img src="./assets/img/cat.jpg" alt="imgCat">
             </div>
             <div class="txtCards p-3 text-start">
               <div class="d-flex justify-content-between align-items-center mb-2">
@@ -192,14 +258,14 @@
                 </svg>
                 <p class="eth">0.07 ETH</p>
               </div>
-              <a href="#" class="btn btn-gradient w-100">Ver detalle</a>
+              <a href="./pages/error404.html" class="btn btn-gradient w-100">Ver detalle</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
           <div class="nft-card">
             <div class="img-container">
-              <img src="./assets/img/dinoCards.png" alt="">
+              <img src="./assets/img/dinoCards.png" alt="imgDino">
             </div>
             <div class="txtCards p-3 text-start">
               <div class="d-flex justify-content-between align-items-center mb-2">
@@ -218,7 +284,7 @@
                 </svg>
                 <p class="eth">0.9 ETH</p>
               </div>
-              <a href="#" class="btn btn-gradient w-100">Ver detalle</a>
+              <a href="./pages/error404.html" class="btn btn-gradient w-100">Ver detalle</a>
             </div>
           </div>
         </div>
@@ -239,7 +305,7 @@
         <div class="foroComentariosWrapper">
           <div class="foroComentarios">
             <div class="foroItem">
-              <img src="./assets/img/dog.jpg" class="foroAvatar">
+              <img src="./assets/img/dog.jpg" alt="imgDog" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@CryptoKat</span>: “¡Acabo de acuñar el #002! Qué relax.”
               </div>
@@ -248,9 +314,8 @@
                 <span><i class="fa-solid fa-thumbs-up"></i> 12</span>
               </div>
             </div>
-
             <div class="foroItem">
-              <img src="./assets/img/cat.jpg" class="foroAvatar">
+              <img src="./assets/img/cat.jpg" alt="imgCat" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@RollingRex</span>: “¡Miren este arte! No puedo esperar al próximo lanzamiento.”
               </div>
@@ -261,7 +326,7 @@
             </div>
 
             <div class="foroItem">
-              <img src="./assets/img/dinoCards.png" class="foroAvatar">
+              <img src="./assets/img/dinoCards.png" alt="imgDino" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@DevDan</span>: “Me encanta el tema de programador. El #001 es una obra maestra.”
               </div>
@@ -271,7 +336,7 @@
               </div>
             </div>
             <div class="foroItem">
-              <img src="./assets/img/dog.jpg" class="foroAvatar">
+              <img src="./assets/img/dog.jpg" alt="imgDog" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@CodeHunter</span>: “El diseño del NFT #002 está muy limpio, se nota que hay buen laburo detrás
                 del código.”
@@ -282,7 +347,7 @@
               </div>
             </div>
             <div class="foroItem">
-              <img src="./assets/img/cat.jpg" class="foroAvatar">
+              <img src="./assets/img/cat.jpg" alt="imgCat" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@PixelDev</span>: “La colección tiene una identidad muy marcada, eso suma muchísimo como
                 producto digital.”
@@ -294,7 +359,7 @@
             </div>
 
             <div class="foroItem">
-              <img src="./assets/img/dinoCards.png" class="foroAvatar">
+              <img src="./assets/img/dinoCards.png" alt="imgDino" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@StackMaster</span>: “Se nota que hay lógica de programación bien pensada en cada detalle del
                 #001.”
@@ -306,7 +371,7 @@
             </div>
 
             <div class="foroItem">
-              <img src="./assets/img/dog.jpg" class="foroAvatar">
+              <img src="./assets/img/dog.jpg" alt="imgDog" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@NFTBuilder</span>: “Este tipo de proyectos mezcla arte y desarrollo, eso los hace mucho más
                 interesantes.”
@@ -318,7 +383,7 @@
             </div>
 
             <div class="foroItem">
-              <img src="./assets/img/cat.jpg" class="foroAvatar">
+              <img src="./assets/img/cat.jpg" alt="imgCat" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@UXCoder</span>: “Muy buen equilibrio entre lo visual y la experiencia de usuario, se siente
                 profesional.”
@@ -330,7 +395,7 @@
             </div>
 
             <div class="foroItem">
-              <img src="./assets/img/dinoCards.png" class="foroAvatar">
+              <img src="./assets/img/dinoCards.png" alt="imgDino" class="foroAvatar">
               <div class="foroTexto">
                 De <span>@FullStackNFT</span>: “El concepto del programador está muy bien llevado, conecta perfecto con
                 devs.”
@@ -365,9 +430,11 @@
           <p class="subtitle">
             Mint abierto por tiempo limitado. ¡No te quedes fuera!
           </p>
-          <button class="btn btn-mint">
+          <a href="./pages/error404.html">
+            <button class="btn btn-mint">
             Mint ahora 🚀
           </button>
+          </a>
         </div>
       </div>
     </div>
