@@ -252,6 +252,7 @@ button,
 .btn-purple {
   margin-top: 25px;
   background: linear-gradient(90deg, --primary-color, #a855f7);
+  background-color: var(--primary-color);
   color: var(--text-primary);
   border: none;
   padding: 14px 34px;
@@ -259,15 +260,6 @@ button,
   font-weight: 600;
   border-radius: 12px;
   transition: 0.3s ease;
-}
-
-.btn-purple {
-  background-color: var(--primary-color);
-  color: var(--text-primary);
-  transition:
-    background-color 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
 }
 
 .btn-purple:hover {
@@ -884,10 +876,6 @@ footer .footerLeft {
 }
 
 .copyright {
-  color: var(--primary-color);
-}
-
-.copyright {
   color: var(--text-secondary);
   display: flex;
   justify-content: center;
@@ -896,6 +884,10 @@ footer .footerLeft {
   margin-top: 40px;
 }
 
+.copyright p {
+  color: var(--text-primary);
+  text-align: center;
+}
 @media (max-width: 768px) {
   .footerContainer {
     flex-direction: column;
@@ -1031,9 +1023,15 @@ textarea {
   margin-bottom: 30px;
 }
 
+@media (max-width: 768px) {
+  .error-overlay p {
+    display: none;
+  }
+}
+
 .btn-volver {
   display: inline-block;
-  background: linear-gradient(135deg, --primary-color, #6366f1);
+  background: linear-gradient(135deg, #7c3aedb4, #6366f1);
   color: var(--text-primary);
   padding: 8px 18px;
   font-size: 0.9rem;
