@@ -2,22 +2,6 @@ body {
   cursor: url("/assets/img/CursorFinal.png"), auto;
 }
 
-:root{
-    --bg-primary: #0B0F1A;
-    --bg-secondary: #12182B;
-    --bg-hover: #1A2238;
-    --primary-color: #8B5CF6;
-    --primary-dark: #7C3AED;
-    --primary-light: #A78BFA;
-    --accent-cyan: #22D3EE;
-    --accent-highlight: #F59E0B;
-    --text-primary: #FFFFFF;
-    --text-secondary: #9CA3AF;
-    --border-radius: 12px;
-    --transition: 0.3s ease;
-    --shadow-main: 0px 4px 20px rgba(0,0,0,0.25);
-}
-
 input,
 textarea,
 [contenteditable="true"] {
@@ -76,6 +60,14 @@ button,
   border-radius: 10px;
   font-weight: 600;
   margin-left: 15px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.navbar .btn:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--text-primary) !important;
 }
 
 .navbar-toggler {
@@ -233,20 +225,20 @@ button,
 }
 
 .text-purple {
-  color: var(--primary-color)  !important;
+  color: #8B5CF6 !important;
 }
 
 .carousel-caption-custom p {
   margin-top: 25px;
   font-size: 1.4rem;
-  color: #d1d5db;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
 .btn-purple {
   margin-top: 25px;
-  background: var(--primary-dark);
-  color: var(--text-primary);
+  background: linear-gradient(90deg, #8B5CF6, #A855F7);
+  color: white;
   border: none;
   padding: 14px 34px;
   font-size: 1.2rem;
@@ -256,7 +248,6 @@ button,
 }
 
 .btn-purple:hover {
-  color: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
 }
@@ -336,7 +327,7 @@ button,
 .carousel-caption-custom p {
   margin-top: 20px;
   font-size: 1.15rem;
-  color: #d1d5db;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -414,12 +405,12 @@ button,
   align-items: center;
   justify-content: center;
   font-family: "Segoe UI", sans-serif;
-  color: #eaeaf0;
+  color: var(--text-secondary);
   padding: 20px;
 }
 
 .icconMensaje {
-  color: #7b2ff7;
+  color: var(--primary-dark);
   font-size: 20px;
 }
 
@@ -427,7 +418,7 @@ button,
   width: 100%;
   padding: 25px 30px;
   border-radius: 25px;
-  background: #202020;
+  background: var(--bg-secondary);
   backdrop-filter: blur(18px);
   border: 3px solid rgba(140, 100, 255, 0.25);
   box-shadow: 0 0 30px rgba(140, 100, 255, 0.35);
@@ -445,7 +436,7 @@ button,
 }
 
 .foroTitulo span {
-  color: #8f7bff;
+  color: var(--primary-color);
 }
 
 .foroIconos span {
@@ -455,11 +446,11 @@ button,
 }
 
 .iInsta {
-  color: rgb(184, 59, 59);
+  color: var(--color-insta);
 }
 
 .iDisc {
-  color: #7b2ff7;
+  color: var(--primary-dark);
 }
 
 .foroComentariosWrapper {
@@ -499,11 +490,11 @@ button,
 
 .foroTexto {
   font-size: 0.95rem;
-  color: #dcdcf5;
+  color: var(--text-secondary);
 }
 
 .foroTexto span {
-  color: #9d8cff;
+  color: var(--text-secondary);
 }
 
 .foroMeta {
@@ -511,9 +502,8 @@ button,
   flex-direction: column;
   align-items: flex-end;
   gap: 4px;
-
   font-size: 0.85rem;
-  color: #aaa;
+  color: var(--text-secondary);
 }
 
 .foroForm {
@@ -543,7 +533,7 @@ button,
 }
 
 .foroTag {
-  color: #8f7bff;
+  color: var(--primary-color);
 }
 
 .foroInputMensaje {
@@ -668,12 +658,12 @@ button,
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 12px;
-  color: #c9a8ff;
+  color: var(--primary-light);
   box-shadow: 0 0 10px rgba(155, 92, 255, 0.3);
 }
 
 .eth {
-  color: #b892ff;
+  color: var(--primary-light);
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -709,18 +699,18 @@ button,
   background: rgba(255, 255, 255, 0.1);
   padding: 6px 14px;
   border-radius: 20px;
-  border: 1px solid #a855f7;
+  border: 1px solid var(--color-violet);
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
   font-size: 1.2rem;
   display: inline-block;
 }
 
 .highlight {
-  color: #a855f7;
+  color: var(--color-violet);
 }
 
 .subtitle {
-  color: #c4c4c4;
+  color: var(--text-secondary);
   font-size: 1.1rem;
 }
 
@@ -733,6 +723,19 @@ button,
   font-weight: 500;
   transition: 0.3s;
   width: 280px;
+}
+
+.btn-mint:hover {
+  background: linear-gradient(90deg, #6d28d9, #9333ea);
+  color: var(--text-primary);
+}
+
+.btn-mint:focus,
+.btn-mint:active,
+.btn-mint:focus-visible {
+  color: var(--text-primary);
+  box-shadow: none;
+  outline: none;
 }
 
 .btn-mint:hover {
@@ -778,7 +781,7 @@ footer .footerLeft {
 .footerText {
   font-weight: 500;
   margin-top: 15px;
-  color: gray;
+  color: var(--text-secondary);
   font-size: 14px;
 }
 
@@ -842,7 +845,8 @@ footer .footerLeft {
   height: 35px;
 
   background-color: #1f2937;
-  color: var(--text-secondary);
+  color: #9ca3af;
+  color: #9ca3af;
 
   text-decoration: none;
   font-size: 16px;
@@ -856,12 +860,12 @@ footer .footerLeft {
 }
 
 .copyright {
-  color: var(--text-secondary);
-  color: var(--primary-color);
+  color: #9ca3af;
+  color: #8b5cf6;
 }
 
 .copyright {
-  color: var(--text-secondary);
+  color: #9ca3af;
   display: flex;
   justify-content: center;
   font-size: 15px;
@@ -869,6 +873,10 @@ footer .footerLeft {
   margin-top: 40px;
 }
 
+.copyright p {
+  color: var(--text-primary);
+  text-align: center;
+}
 @media (max-width: 768px) {
   .footerContainer {
     flex-direction: column;
@@ -903,7 +911,7 @@ footer .footerLeft {
   }
 }
 .contacto {
-  background-color: #0d1117;
+  background-color: var(--bg-secondary);
 }
 
 .form-box {
@@ -931,8 +939,8 @@ footer .footerLeft {
 }
 
 .btn-gradient {
-  background: linear-gradient(90deg, --primary-dark, #a855f7);
-  color: var(--text-primary);
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  color: white;
   border: none;
 }
 
@@ -946,7 +954,7 @@ textarea {
 }
 
 .contactoSection {
-  background-color: #0f1422;
+  background-color: var(--bg-secondary);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding: 50px;
@@ -1000,14 +1008,20 @@ textarea {
 
 .error-overlay p {
   font-size: 0.95rem;
-  color: #e0e7ff;
+  color: var(--color-error);
   margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .error-overlay p {
+    display: none;
+  }
 }
 
 .btn-volver {
   display: inline-block;
-  background: linear-gradient(135deg, --primary-color, #6366f1);
-  color: var(--text-primary);
+  background: linear-gradient(135deg, #8b5cf6, #6366f1);
+  color: white;
   padding: 8px 18px;
   font-size: 0.9rem;
   border-radius: 10px;
@@ -1017,5 +1031,5 @@ textarea {
 
 .btn-volver:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px var(--primary-color);
+  box-shadow: 0 0 20px #8b5cf6;
 }
