@@ -194,7 +194,7 @@ button,
 }
 
 .carousel-img {
-  height: 620px;
+  height: 100vh;
   object-fit: cover;
 }
 
