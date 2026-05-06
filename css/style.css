@@ -2,6 +2,20 @@ body {
   cursor: url("/assets/img/CursorFinal.png"), auto;
 }
 
+:root {
+  --color-error: #e0e7ff;
+  --bg-primary: #1f2937;
+  --bg-secondary: #12182b;
+  --primary-color: #8b5cf6;
+  --primary-dark: #7c3aed;
+  --primary-light: #a78bfa;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --color-violet: #a855f7;
+  --color-insta: rgb(184, 59, 59);
+  --shadow-main: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
 input,
 textarea,
 [contenteditable="true"] {
@@ -9,7 +23,7 @@ textarea,
 }
 
 a,
-butt
+button,
 .clickable {
   cursor: url("/assets/img/CursorManoFinal.png"), pointer;
 }
@@ -225,7 +239,7 @@ button,
 }
 
 .text-purple {
-  color: #8B5CF6 !important;
+  color: var(--primary-color) !important;
 }
 
 .carousel-caption-custom p {
@@ -237,8 +251,9 @@ button,
 
 .btn-purple {
   margin-top: 25px;
-  background: linear-gradient(90deg, #8B5CF6, #A855F7);
-  color: white;
+  background: linear-gradient(90deg, --primary-color, #a855f7);
+  background-color: var(--primary-color);
+  color: var(--text-primary);
   border: none;
   padding: 14px 34px;
   font-size: 1.2rem;
@@ -248,6 +263,8 @@ button,
 }
 
 .btn-purple:hover {
+  background-color: var(--primary-dark);
+  color: var(--text-primary);
   transform: translateY(-2px);
   box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
 }
@@ -715,7 +732,7 @@ button,
 }
 
 .btn-mint {
-  background: linear-gradient(90deg, --primary-dark, #a855f7);
+  background: linear-gradient(90deg, #7c3aed, #a855f7);
   border: none;
   padding: 10px 22px;
   border-radius: 10px;
@@ -844,9 +861,8 @@ footer .footerLeft {
   width: 35px;
   height: 35px;
 
-  background-color: #1f2937;
-  color: #9ca3af;
-  color: #9ca3af;
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
 
   text-decoration: none;
   font-size: 16px;
@@ -860,12 +876,7 @@ footer .footerLeft {
 }
 
 .copyright {
-  color: #9ca3af;
-  color: #8b5cf6;
-}
-
-.copyright {
-  color: #9ca3af;
+  color: var(--text-secondary);
   display: flex;
   justify-content: center;
   font-size: 15px;
@@ -940,7 +951,7 @@ footer .footerLeft {
 
 .btn-gradient {
   background: linear-gradient(90deg, #7c3aed, #a855f7);
-  color: white;
+  color: var(--text-primary);
   border: none;
 }
 
@@ -1020,8 +1031,8 @@ textarea {
 
 .btn-volver {
   display: inline-block;
-  background: linear-gradient(135deg, #8b5cf6, #6366f1);
-  color: white;
+  background: linear-gradient(135deg, #7c3aedb4, #6366f1);
+  color: var(--text-primary);
   padding: 8px 18px;
   font-size: 0.9rem;
   border-radius: 10px;
@@ -1031,5 +1042,5 @@ textarea {
 
 .btn-volver:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #8b5cf6;
+  box-shadow: 0 0 20px --primary-color;
 }
