@@ -2,6 +2,22 @@ body {
   cursor: url("/assets/img/CursorFinal.png"), auto;
 }
 
+:root{
+    --bg-primary: #0B0F1A;
+    --bg-secondary: #12182B;
+    --bg-hover: #1A2238;
+    --primary-color: #8B5CF6;
+    --primary-dark: #7C3AED;
+    --primary-light: #A78BFA;
+    --accent-cyan: #22D3EE;
+    --accent-highlight: #F59E0B;
+    --text-primary: #FFFFFF;
+    --text-secondary: #9CA3AF;
+    --border-radius: 12px;
+    --transition: 0.3s ease;
+    --shadow-main: 0px 4px 20px rgba(0,0,0,0.25);
+}
+
 input,
 textarea,
 [contenteditable="true"] {
@@ -9,7 +25,7 @@ textarea,
 }
 
 a,
-button,
+butt
 .clickable {
   cursor: url("/assets/img/CursorManoFinal.png"), pointer;
 }
@@ -30,11 +46,11 @@ button,
 .navbar-brand {
   font-size: 1.4rem;
   font-weight: 700;
-  color: white !important;
+  color: var(--text-primary) !important;
 }
 
 .navbar-brand:hover {
-  color: white !important;
+  color: var(--text-primary) !important;
 }
 
 .navbar-brand img {
@@ -47,12 +63,12 @@ button,
   margin: 0 10px;
   font-size: 1rem;
   font-weight: 500;
-  color: white !important;
+  color: var(--text-primary) !important;
   transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #8B5CF6 !important;
+  color: var(--primary-color) !important;
 }
 
 .navbar .btn {
@@ -94,7 +110,7 @@ button,
   }
 
   .navbar-nav .nav-link {
-    color: white !important;
+    color: var(--text-primary) !important;
   }
 
   .navbar .btn {
@@ -148,7 +164,7 @@ button,
 
   .navbar-brand {
     font-size: 0.75rem;
-    color: white !important;
+    color: var(--text-primary) !important;
   }
 
   .navbar-brand img {
@@ -175,7 +191,7 @@ button,
   .navbar-nav .nav-link {
     font-size: 0.8rem;
     margin: 7px 0;
-    color: white !important;
+    color: var(--text-primary) !important;
   }
 
   .navbar .btn {
@@ -190,7 +206,7 @@ button,
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(139, 92, 246, 0.2);
-  background-color: #12182b;
+  background-color: var(--bg-secondary);
 }
 
 .carousel-img {
@@ -211,13 +227,13 @@ button,
 .carousel-caption-custom h1 {
   font-size: 4rem;
   font-weight: 800;
-  color: white;
+  color: var(--text-primary);
   line-height: 1.1;
   margin: 0;
 }
 
 .text-purple {
-  color: #8B5CF6 !important;
+  color: var(--primary-color)  !important;
 }
 
 .carousel-caption-custom p {
@@ -229,8 +245,8 @@ button,
 
 .btn-purple {
   margin-top: 25px;
-  background: linear-gradient(90deg, #8B5CF6, #A855F7);
-  color: white;
+  background: var(--primary-dark);
+  color: var(--text-primary);
   border: none;
   padding: 14px 34px;
   font-size: 1.2rem;
@@ -240,6 +256,7 @@ button,
 }
 
 .btn-purple:hover {
+  color: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
 }
@@ -248,14 +265,14 @@ button,
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #9CA3AF;
+  background-color: var(--text-secondary);
   border: none;
   opacity: 1;
   margin: 0 6px;
 }
 
 .carousel-indicators .active {
-  background-color: #8B5CF6;
+  background-color: var(--primary-color);
 }
 
 .carousel-control-prev,
@@ -311,7 +328,7 @@ button,
 .carousel-caption-custom h1 {
   font-size: 3.2rem;
   font-weight: 800;
-  color: white;
+  color: var(--text-primary);
   line-height: 1.1;
   margin: 0;
 }
@@ -516,7 +533,7 @@ button,
   margin-bottom: 15px;
 
   background: rgba(255, 255, 255, 0.08);
-  color: white;
+  color: var(--text-primary);
 }
 
 .foroMensajeRow {
@@ -535,7 +552,7 @@ button,
   border-radius: 10px;
   border: none;
   background: rgba(255, 255, 255, 0.08);
-  color: white;
+  color: var(--text-primary);
 }
 
 .foroBoton {
@@ -543,7 +560,7 @@ button,
   border-radius: 12px;
   border: none;
   background: linear-gradient(135deg, #6c5cff, #8f7bff);
-  color: white;
+  color: var(--text-primary);
   font-weight: 600;
   transition: 0.3s;
 }
@@ -605,7 +622,7 @@ button,
 }
 
 .txtColect {
-  color: #8b5cf6;
+  color: var(--primary-color);
 }
 .iconEt {
   width: 24px;
@@ -664,7 +681,7 @@ button,
 .btn-gradient {
   background: linear-gradient(90deg, #7b2ff7, #9b5cff);
   border: none;
-  color: white;
+  color: var(--text-primary);
   border-radius: 10px;
   padding: 10px;
   transition: 0.3s;
@@ -672,7 +689,7 @@ button,
 
 .btn-gradient:hover {
   opacity: 0.8;
-  background-color: #8b5cf6;
+  background-color: var(--primary-color);
 }
 
 .containerBanner {
@@ -708,11 +725,11 @@ button,
 }
 
 .btn-mint {
-  background: linear-gradient(90deg, #7c3aed, #a855f7);
+  background: linear-gradient(90deg, --primary-dark, #a855f7);
   border: none;
   padding: 10px 22px;
   border-radius: 10px;
-  color: white;
+  color: var(--text-primary);
   font-weight: 500;
   transition: 0.3s;
   width: 280px;
@@ -768,8 +785,7 @@ footer .footerLeft {
 .footerNav {
   font-size: 15px;
   font-weight: 500;
-  color: #8b5cf6;
-  color: #8b5cf6;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -788,23 +804,20 @@ footer .footerLeft {
 }
 
 .linksNav {
-  color: #9ca3af;
-  color: #9ca3af;
+  color: var(--text-secondary);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
 }
 
 .linksNav:hover {
-  color: #8b5cf6;
-  color: #8b5cf6;
+  color: var(--primary-color);
 }
 
 .footerSections {
   font-size: 15px;
   font-weight: 500;
-  color: #8b5cf6;
-  color: #8b5cf6;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -829,8 +842,7 @@ footer .footerLeft {
   height: 35px;
 
   background-color: #1f2937;
-  color: #9ca3af;
-  color: #9ca3af;
+  color: var(--text-secondary);
 
   text-decoration: none;
   font-size: 16px;
@@ -840,16 +852,16 @@ footer .footerLeft {
 }
 
 .redesIconos a:hover {
-  color: #8b5cf6;
+  color: var(--primary-color);
 }
 
 .copyright {
-  color: #9ca3af;
-  color: #8b5cf6;
+  color: var(--text-secondary);
+  color: var(--primary-color);
 }
 
 .copyright {
-  color: #9ca3af;
+  color: var(--text-secondary);
   display: flex;
   justify-content: center;
   font-size: 15px;
@@ -905,7 +917,7 @@ footer .footerLeft {
 .form-control {
   background-color: rgba(255, 255, 255, 0.05);
   border: none;
-  color: white;
+  color: var(--text-primary);
 }
 
 .form-control::placeholder {
@@ -915,12 +927,12 @@ footer .footerLeft {
 .form-control:focus {
   background-color: rgba(255, 255, 255, 0.08);
   box-shadow: none;
-  color: white;
+  color: var(--text-primary);
 }
 
 .btn-gradient {
-  background: linear-gradient(90deg, #7c3aed, #a855f7);
-  color: white;
+  background: linear-gradient(90deg, --primary-dark, #a855f7);
+  color: var(--text-primary);
   border: none;
 }
 
@@ -943,7 +955,7 @@ textarea {
 .contactoP {
   font-size: 24px;
   font-weight: 600;
-  color: #7c3aed;
+  color: var(--primary-dark);
 }
 @media (max-width: 768px) {
   .form-box {
@@ -974,7 +986,7 @@ textarea {
   transform: translateX(-50%);
 
   text-align: center;
-  color: white;
+  color: var(--text-primary);
   max-width: 600px;
   padding: 20px;
 }
@@ -982,7 +994,7 @@ textarea {
 .error-overlay h1 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #a78bfa;
+  color: var(--primary-light);
   margin-bottom: 20px;
 }
 
@@ -994,8 +1006,8 @@ textarea {
 
 .btn-volver {
   display: inline-block;
-  background: linear-gradient(135deg, #8b5cf6, #6366f1);
-  color: white;
+  background: linear-gradient(135deg, --primary-color, #6366f1);
+  color: var(--text-primary);
   padding: 8px 18px;
   font-size: 0.9rem;
   border-radius: 10px;
@@ -1005,5 +1017,5 @@ textarea {
 
 .btn-volver:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px #8b5cf6;
+  box-shadow: 0 0 20px var(--primary-color);
 }
